@@ -126,7 +126,7 @@ body {
   display: block;
   padding: 8px 20px;
   color: #555;
-  
+
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 14px;
@@ -139,15 +139,36 @@ body {
 
 /* Image Center */
 .imgcenter {
-  margin-left: 15px;
+  margin-left: 20px;
   margin-top: 10px;
+  margin-right: 20px;
 }
 .imgcenter img {
-  width: 98%;
+  width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Bottom Logos */
 .imgend {
   margin-top: 45px;
