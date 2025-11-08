@@ -1,0 +1,3457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZanDo - Fashion Store</title>
+    <link rel="icon" type="image/png" href="/image/ZandoNoBorder.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="menu">
+        <!-- Mobile toggle - Using link with hash -->
+        <a href="#mobile-menu" class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="menu-left">
+          <ul class="menulink">
+            <li>
+              <a href="#">Woman</a>
+              <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">Sportlife</a></li>
+                <li><a href="#">New In Top</a></li>
+                <li><a href="#">New In Dress</a></li>
+                <li><a href="#">New In Bottom</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Man</a>
+              <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Vest</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                <li><a href="#">Cardigans</a></li>
+                <li><a href="#">Sportswear</a></li>
+                <li><a href="#">Trousers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Boy</a>
+              <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Loafers</a></li>
+                <li><a href="#">Sandals</a></li>
+                <li><a href="#">Sneakers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Girls</a>
+              <ul class="dropdown">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Bows</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Socks</a></li>
+                <li><a href="#">Caps & Hats</a></li>
+                <li><a href="#">Backpacks</a></li>
+                <li><a href="#">Belts</a></li>
+                <li><a href="#">UnderWear</a></li>
+                <li><a href="#">Gloves</a></li>
+                <li><a href="#">Sport Equipment</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logo -->
+        <div class="menu-center">
+          <img src="./image/ZandoNoBorder - Copy.png" alt="ZanDo Logo" />
+          <!-- <img src="" alt=""> -->
+        </div>
+
+        <!-- Right -->
+        <div class="menu-right">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="bell">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </div>
+          <div class="heart">
+            <i class="fas fa-heart"></i>
+            <span class="notification-badge">5</span>
+          </div>
+          <div class="bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="notification-badge">2</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu and Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#" class="mobile-menu-close">&times;</a>
+      <ul>
+        <li>
+          <details>
+            <summary class="mobile-menu-category">
+              Woman <i class="fas fa-chevron-down"></i>
+            </summary>
+            <ul class="mobile-dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Sportlife</a></li>
+              <li><a href="#">New In Top</a></li>
+              <li><a href="#">New In Dress</a></li>
+              <li><a href="#">New In Bottom</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="mobile-menu-category">
+              Man <i class="fas fa-chevron-down"></i>
+            </summary>
+            <ul class="mobile-dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Blazers</a></li>
+              <li><a href="#">Vest</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Jackets</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Hoodies & Sweatshirts</a></li>
+              <li><a href="#">Cardigans</a></li>
+              <li><a href="#">Sportswear</a></li>
+              <li><a href="#">Trousers</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="mobile-menu-category">
+              Boy <i class="fas fa-chevron-down"></i>
+            </summary>
+            <ul class="mobile-dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Loafers</a></li>
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">Sneakers</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="mobile-menu-category">
+              Girls <i class="fas fa-chevron-down"></i>
+            </summary>
+            <ul class="mobile-dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Bows</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Socks</a></li>
+              <li><a href="#">Caps & Hats</a></li>
+              <li><a href="#">Backpacks</a></li>
+              <li><a href="#">Belts</a></li>
+              <li><a href="#">UnderWear</a></li>
+              <li><a href="#">Gloves</a></li>
+              <li><a href="#">Sport Equipment</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">REGISTER</a></li>
+      </ul>
+    </div>
+
+    <!-- Content to demonstrate the menu works -->
+    <div class="imgcenter">
+      <swiper-container
+        class="mySwiper"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="3500"
+        autoplay-disable-on-interaction="false"
+      >
+     
+        <swiper-slide
+          ><img src="./image/50OFF_Main (2160x1066).jpg" alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="https://zandokh.com/image/catalog/banner/2025/ZANDO/October/70OFFPB_Main%20(2160x1066).jpg" alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="./image/70OFFSALE_Main (2160x1066).jpg" alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Augst/Pchum Ben/70OFFPB_Main (2160x1066)0.jpg"
+            alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Augst/10 year/10Year80OFF 2160x1066.jpg"
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Augst/Pchum Ben/Whisper of Purity.jpg"
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Augst/Pchum Ben/80OFFPB_Main (2160x1066)-100.jpg"
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://zandokh.com/image/catalog/banner/2025/ZANDO/September/50OFF_Main%20(2160x1066).jpg"
+        /></swiper-slide>
+      </swiper-container>
+      <div class="hero-buttons">
+        <button>Order Now</button>
+        <button>Read More</button>
+      </div>
+    </div>
+     <!-- Bottom Logos -->
+    <div class="imgend">
+      <img src="./image/361NoBorder - Copy.png" alt="" />
+      <img src="./image/Ten11NoBorder - Copy.png" alt="" />
+      <img src="./image/gatoni-logo - Copy.png" alt="" />
+      <img src="./image/RoutineNoBorder - Copy.png" alt="" />
+      <img src="./image/361NoBorder - Copy.png" alt="" />
+      <img src="./image/2025-07-22 12.02.25 - Copy.png" alt="" />
+    </div>
+     <br>
+    <div class="header-product">
+      <img src="./image/life1.jpg" alt="">
+      <img src="./image/life2.jpg" alt="">
+      <img src="./image/life3.jpg" alt="">
+    </div>
+     <br>
+    <div class="midd-product">
+      <img src="./image/4.jpg" alt="">
+      <img src="./image/5.jpg" alt="">
+    </div>
+    <br>
+    <div class="card-product">
+      <h2>Tumbler & Umbrella Essentials🥤☔️</h2>
+      <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-37.62%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-07/15225051065/ZANDO30.05.20250491-cr-450x672.jpg"
+            alt="Regular Trouser"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $9.95</span>
+              <span class="old">US $15.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">ZANDO Umbrella</div>
+            
+          </div>
+        </div>
+        <div class="card">
+           <div class="discount">-39%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-07/2522505877/ZANDO0705202523443-cr-450x672.jpg"
+            alt="Regular T-Shirt"
+          />
+           <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $10.95</span>
+              <span class="old">US $17.95</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">TEN11 Umbrella</div>
+            
+          </div>
+         
+        </div>
+        <div class="card">
+        
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/2522506755/Umbraller%20Post2%20(3)-cr-450x672.jpg"
+            alt="Mesh Jersey T-Shirts"
+          />
+           <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.95</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">TEN11 Umbrella</div>
+          
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-15.44%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/2522506758/TEN11%20-%20thumbler%20Blind%20Box%2002%20(3)-cr-450x672.jpg"
+            alt="Midi Pleats Skirt"
+          />
+           <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+             
+               <span class="new">US $10.95</span>
+              <span class="old">US $12.95</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">TEN11 Tumbler</div>
+            <div class="color-options">
+            
+              <div class="color-option color-white"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+           <div class="discount">-9.13%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/2522506759/Bilnd%20box%2002%20(3)-cr-450x672.jpg"
+            alt="Double Fitted Knitted With Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+               <span class="new">US $9.95</span>
+              <span class="old">US $10.95</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">TEN11 Tumbler</div>
+            <div class="color-options">
+              <div class="color-option color-white " id="active"></div>
+            
+             
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+         
+          <img
+            src="https://i.pinimg.com/1200x/d6/b8/24/d6b824b510f231d5b972fc72ed00f9e3.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+           
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+    <br>
+    <div class="card-product">
+      <h2>Tradition Meets Style – Pchum Ben🪔</h2>
+      <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-20%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-09/21225061282%20Replace/ZD__1931-cr-450x672.jpg"
+            alt="Regular Trouser"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $15.96</span>
+              <span class="old">US $19.59</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Regular Fitted Shirts</div>
+             <div class="color-options">
+              <div class="color-option color-blue " id="active"></div>
+              <div class="color-option color-white"></div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <div class="card">
+          
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/3222507036/DSC06762-cr-450x672.jpg"
+            alt="Regular Trouser"
+          />
+          <span class="txt-brand">GATON/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $39.95</span>
+              <!-- <span class="old">US $15.95</span> -->
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Gathered Bustier Top</div>
+            
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-20%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061604/DSC08207-cr-450x672.jpg"
+            alt="Regular Trouser"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $12.76</span>
+              <span class="old">US $15.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Regular Blouse</div>
+            
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-20%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061632/DSC08324-cr-450x672.jpg"
+            alt="Regular Trouser"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.56</span>
+              <span class="old">US $16.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Double Fitted Knitted With Shirt</div>
+             <div class="color-options">
+              <div class="color-option color-green " id="active"></div>
+              <div class="color-option color-white"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061329/ZANDO200820258711-cr-450x672.jpg"
+            alt="Regular T-Shirt"
+          />
+           <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.53</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-green"></div>
+            </div>
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-09/21225051317/ZANDO190820257884-cr-450x672.jpg"
+            alt="Mesh Jersey T-Shirts"
+          />
+           <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $11.67</span>
+              <span class="old">US $14.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Mesh Jersey T-Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-green " id="active"></div>
+              <div class="color-option color-white"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+         
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061626%20Replace/ZD__0254-cr-450x672.jpg"
+            alt="Midi Pleats Skirt"
+          />
+           <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.95</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Midi Pleats Skirt</div>
+           
+          </div>
+        
+        </div>
+        <div class="card">
+          
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061632/ZANDO120820256388-cr-450x672.jpg"
+            alt="Double Fitted Knitted With Shirt"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.95</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Double Fitted Knitted With Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-pink"></div>
+             
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061345/ZANDO190820258022-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular T-shirts</div>
+            <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-bisque"></div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+         
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061302/ZANDO210820258739-cr-450x672.jpg"
+            alt="Wide Straight Denim Jean"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $22.59</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Wide Straight Denim Jean</div>
+          
+          </div>
+         
+        </div>
+
+        <div class="card">
+          <div class="discount">-20%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061627/ZANDO120820256241-cr-450x672.jpg"
+            alt="Midi Skirt"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $14.07</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Midi Skirt</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+         
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/22225061632/ZANDO120820256388-cr-450x672.jpg"
+            alt="Double Fitted Knitted With Shirt"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.95</span>
+              
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Double Fitted Knitted With Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              <div class="color-option color-pink"></div>
+            </div>
+          </div>
+       
+        </div>
+
+        <div class="card">
+         
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061345/ZANDO190820258022-cr-450x672.jpg"
+            alt="Regular T-Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular T-Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              <div class="color-option color-bisque"></div>
+              <div class="color-option color-white"></div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+        
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061302/ZANDO210820258739-cr-450x672.jpg"
+             
+            alt="Wide Straight Denim Jean"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $22.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Wide Straight Denim Jean</div>
+           
+          </div>
+         
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225071309/ZANDO210820258723-cr-450x672.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <!-- \\\ -->
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/a5/90/50/a59050f9b0ea4b587648b7cbfeb2da32.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/f9/65/1b/f9651b9aa522dc39a8327f5142a01601.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/0a/5c/2e/0a5c2e5355e5b42ac9e1ee063aaf7737.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/2c/e8/e7/2ce8e71783f3de56f5f82582bd174396.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/736x/15/80/50/158050c7c80699128b4ca032418e1c5e.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/736x/8f/48/70/8f48709e12900b82ee1ac5beefa0ca2d.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/736x/9e/21/b8/9e21b85dac6db1da545879a2f58c8fd2.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/736x/3d/5f/76/3d5f7618e291ccf969a4f01c972926b5.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-08/21225071309/ZANDO210820258723-cr-450x672.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/34/8b/b5/348bb51ec2d171716b4b06f13c74f2da.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/78/80/7f/78807f528b8b776c8f2bba3ac5a8796c.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <!-- <div class="discount">-20%</div> -->
+          <img
+            src="https://i.pinimg.com/1200x/d6/b8/24/d6b824b510f231d5b972fc72ed00f9e3.jpg"
+            alt="Relaxed Polo Shirts"
+          />
+          <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $18.59</span>
+             
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed Polo Shirts</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+    <br>
+    <div class="dis-product">
+      <h2>✨ Pchum Ben Big Deals.</h2>
+      <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-40%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-06/5152411124/DSC00OO2-cr-450x672.jpg"
+            alt="Slim Fitting With Bolero Cardigan"
+          />
+          <span class="txt-brand">361 <sup>0</sup> Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $14.75</span>
+              <span class="old">US $24.59</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Unisex-Sport Life T-Shirt With Printed</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <!-- <div class="color-option color-red"></div> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-12/2122409759/Rubbe-%20Sliders%20(1)-cr-450x672.jpg"
+            alt="Slim Fitting With Bolero Cardigan"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.97</span>
+              <span class="old">US $9.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Rubber Sliders</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/2222408919/Fitted%20T-shirt%20(9)-cr-450x672.jpg"
+            alt="Slim Fitting With Bolero Cardigan"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.08</span>
+              <span class="old">US $16.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Slim Fitting With Bolero Cardigan</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-40%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-04/5162411079/ZANDO280320259828-cr-450x672.jpg"
+            alt="Slim Fitting With Bolero Cardigan"
+          />
+          <span class="txt-brand">361 <sup>0</sup> Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $35.75</span>
+              <span class="old">US $59.59</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Lightspeed Running Sneakers</div>
+            <div class="color-options">
+              <div class="color-option color-yellow active"></div>
+              <div class="color-option color-blown"></div>
+              <!-- <div class="color-option color-red"></div> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/2522503812/ZANDO2205202526042-cr-450x672.jpg"
+            alt="Slim Fitting With Bolero Cardigan"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.57</span>
+              <span class="old">US $7.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Cap With Embroidery</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-blown"></div>
+              <!-- <div class="color-option color-red"></div> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-02/5132410002/IMG_0801-cr-450x672.jpg"
+            alt="Sport Life Trouser"
+          />
+          <span class="txt-brand">361 <sup>0</sup> Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.38</span>
+              <span class="old">US $44.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Sport Life Trouser</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-40%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-06/1122503955/05.06.20252793-cr-450x672.jpg"
+            alt="Regular Polo Shirts"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $10.17</span>
+              <span class="old">US $16.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Polo Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-pink " id="active"></div>
+              <div class="color-option color-blue"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-07/21225031171/ZD__0447-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+         
+           <span class="txt-brand">TEN11/New in</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.38</span>
+              <span class="old">US $14.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular T-Shirt With Printed</div>
+            <div class="color-options">
+              <div class="color-option color-blue" id="active"></div>
+              <div class="color-option color-white"></div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- ||| -->
+        <div class="card">
+          <div class="discount">-70%</div>
+         
+
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-12/2122411919/T-Shirt%20(9)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.68</span>
+              <span class="old">US $15.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Loose Fit T-Shirt With Prints</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/2122411953/IMG_1323-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+           
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.28</span>
+              <span class="old">US $27.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Hoodie With Printed</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-09/21225061274%20Replace/ZD__0990-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.71</span>
+              <span class="old">US $19.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Trouser</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5N0a5DOFP_JoGCvYvgsHg_Z5CDOLGbo0RA&s"
+            alt="Halter Mini Dress"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.08</span>
+              <span class="old">US $23.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Fit Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-bisque"></div>
+              <div class="color-option color-pink"></div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-40.61%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/5142411062%20replace/ZANDO2105202525831-cr-450x672.jpg"
+            alt="Cargo Trousers"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $19.95</span>
+              <span class="old">US $33.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Basketball Sandals</div>
+            <div class="color-options">
+              <div class="color-option color-black"id="active"></div>
+              <div class="color-option color-blown"></div>
+              <div class="color-option color-yellow"></div>
+            </div>
+          </div>
+       
+        </div>
+
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-07/22225031245/Untitled%20Session0483-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.51</span>
+              <span class="old">US $23.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Wide Leg Cargo Jean</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-09/22225041390/ZANDO300720250172-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $11.16</span>
+              <span class="old">US $15.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Halter Mini Dresse</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/2122408741/Cargo%20Trousers%20(2)-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/31/c7/ee/31c7ee0fbe44d953d4d98584f80d91e9.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/2122408741/Cargo%20Trousers%20(2)-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/68/81/a4/6881a479b2c7965c474a3425e8536be5.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/1200x/a9/ad/04/a9ad0417c65787fee8b7bceece98d487.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/0b/33/0d/0b330d5553f4b1af9a7edab0ddcd281d.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/1200x/2c/84/11/2c841185e48e46a5716be194e198a844.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/1200x/3f/20/f9/3f20f9d6070dd34a397c35dffd8e2c44.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/1200x/7d/30/10/7d3010b7453770ada0b3edda86235a9a.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/53/8e/59/538e59a331a4bcc8afa918bccb7dc137.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/1200x/2c/3a/f1/2c3af1ee7979f624e06d8ff23a997b15.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/11/01/e2/1101e23ad2e90d1c5da0ac70dd829486.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://i.pinimg.com/736x/e6/c4/5d/e6c45d30a92aa1b4770173530ddbb99f.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.98</span>
+              <span class="old">US $26.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black " id="active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+    </div>
+    <br>
+    <div class="product-discount">
+      <h2>ZANDO 10 Years, Infinite Style ✨</h2>
+      <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-08/1222406389/Midi%20Skirt%20(2)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.38</span>
+              <span class="old">US $17.95</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Wide Leg Cargo Jean</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-02/21224121047/5D_L1288-Edit-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.80</span>
+              <span class="old">US $17.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Unisex T-Shirt With Printed</div>
+            <div class="color-options">
+              <div class="color-option color-red" id="active"></div>
+              <div class="color-option color-blue"></div>
+            </div>
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-08/1222405384/Cargo%20Trousers%20(8)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.32</span>
+              <span class="old">US $21.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/12225011033/ZANDO270320259502-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $2.19</span>
+              <span class="old">US $10.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">sOLID rUCHED wIDE sTRAP tOPS</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-04/4222401034/Model/10S24KNIW002_YELLOW-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $3.19</span>
+              <span class="old">US $15.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Knitted Tank Top</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/21225031246/ZANDO2705202527691-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.38</span>
+              <span class="old">US $14.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Relaxed T-Shirt With Printed</div>
+            <div class="color-options"> 
+              <div class="color-option color-pink" id=" active"></div>
+              <div class="color-option color-white"></div>
+             
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-03/2222406724/ZANDO01.04.202511274-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.68</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Dresses</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-09/2112407025/Trousers%20(2)-cr-450x672.jpg"
+            alt="Halter Mini Dress"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.08</span>
+              <span class="old">US $23.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Fit Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              <div class="color-option color-bisque"></div>
+              <div class="color-option color-pink"></div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-09/2112406016/Oversized-Dyed-T-shirts%20(2)-cr-450x672.jpg"
+            alt="Cargo Trousers"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.48</span>
+              <span class="old">US $21.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Oversized Dyed T-Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-black" id="active"></div>
+              
+            </div>
+          </div>
+       
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/21225031141/05-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.18</span>
+              <span class="old">US $23.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Cargo Trouder</div>
+            <div class="color-options">
+              <div class="color-option color-blue" id="active"></div>
+              <div class="color-option color-pink"></div>
+             
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/2222409915/IMG_10372-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.78</span>
+              <span class="old">US $22.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Wide Leg Trouder</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/85/68/b9/8568b9e42dcd846d67ae1198fd31ddff.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/1a/a4/f0/1aa4f0f116497e9185fcd2dd7e84a245.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/e6/92/bd/e692bd43e0d899966cb758112ed810b9.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/99/e9/35/99e935170a770230ffcce6a165d55601.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/5b/47/cf/5b47cfed18d7a8a269ed8c6c2ea54087.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/86/9f/1b/869f1bdca2a63b82e39cdd0c4d59acef.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/a6/a0/10/a6a010c62a16c5917cb2aee7b9561bfa.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/86/64/17/866417e94eba16975754c1e30694d5d1.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/6d/92/97/6d9297f3e6d2c14537a9952310b084cd.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/50/5b/94/505b946e3e5092c6d627f29c8ded6bc9.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/5b/fa/b5/5bfab5b971cf32fa67e34f49b4586658.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/7a/42/32/7a4232b5d667c6577ff5c406c2858f88.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/c2/80/26/c280262b05795fcd4cce4dfe0d12a1f7.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.80</span>
+              <span class="old">US $13.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Sport Life T-Shirt</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+    </div>
+    <div class="just-dis">
+      <h2>Just In & Up to 50% Savings! 🌟</h2>
+      <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-40%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-04/1122501835/DSC0000-24-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.15</span>
+              <span class="old">US $13.59</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">Oversized T-Shirtd With Printed</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/21225031129/ZANDO3004202521096-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $11.97</span>
+              <span class="old">US $23.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Wide Straght Trouser</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-02/22224121129/OSA_8435-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $6.29</span>
+              <span class="old">US $12.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cropped Knitted Tops</div>
+            <div class="color-options">
+              <div class="color-option color-bisque"id="active"></div>
+              <div class="color-option color-blown"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/4122410014/10F24DPA059_M%20Indigo_quan-jean-nam%20(3)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $13.47</span>
+              <span class="old">US $26.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Loose Fit Wide Leg Jean</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZxZEkY-IvDoPiALHRzMS1Ru75PkCYgzus5w&s"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.80</span>
+              <span class="old">US $15.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Fit T-Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-blue " id="active"></div>
+              <div class="color-option color-chocolate"></div>
+              <div class="color-option color-brown"></div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-02/2122411789%20Replacex2/4-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.47</span>
+              <span class="old">US $16.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Loose Fit Wide Leg Jean</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-02/1222412925/ZANDOOO0535-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $9.80</span>
+              <span class="old">US $19.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Loose Fit Pleats Trouser</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/1222411723/IMG_9982-cr-450x672.jpg"
+            alt="Halter Mini Dress"
+          />
+          <span class="txt-brand">ZANDO</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $10.80</span>
+              <span class="old">US $21.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Midi Denim Stripe Skirt</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/4122409244/IMG_9660-cr-450x672.jpg"
+            alt="Cargo Trousers"
+          />
+          <span class="txt-brand">ROITINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $9.47</span>
+              <span class="old">US $18.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular T-Shirts</div>
+            <div class="color-options">
+              <div class="color-option color-black" id=" active"></div>
+              <div class="color-option color-pink"></div>
+             
+            </div>
+          </div>
+       
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/22224111006/IMG_9855-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.47</span>
+              <span class="old">US $10.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Lace Trim Tops</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-12/2122411923/IMG_0506-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+           <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $7.29</span>
+              <span class="old">US $14.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Loose Fit T-Shirt With Embroidery</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/4122407201/Regular%20Jackets%20(1)-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/ca/70/c6/ca70c6b625ffbca162d184e92d71184e.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/7f/ad/b7/7fadb7436f748a61047d22346d94ccc1.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/91/07/ff/9107ff949b9ba4fef36f0a245ec9bfb8.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/2d/b6/1b/2db61b6e34a68f0715c1047fed809d0a.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/b9/8b/27/b98b27ca05efae484d4da1fcd2503a87.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/51/6b/bf/516bbf48d4652afb76e574d425e5daee.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/42/8d/fb/428dfb1e3d23fa5b022393a7c46199ac.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/34/1c/03/341c035f170d3a1a7636e47e386ef14d.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/be/c2/6d/bec26dfa0a5ee77682a981690381c554.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/9f/49/32/9f49322b63398bd294a56d3f301a12e5.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title"> Striped Autumn Blouse Office </div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/4c/cf/50/4ccf503eda8a93f11961d447b37d01c6.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Regular Jackets</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/736x/3d/39/10/3d39100c0f597e5351190a32efed66eb.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $16.30</span>
+              <span class="old">US $32.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Rolled Sleeve </div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+    </div>
+<div class="shoes-dis">
+  <h2>New Footwear Drop !!</h2>
+  <div class="slider-container">
+      <div class="product-container">
+        <div class="card">
+          <div class="discount">-27.39%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-04/5152411099/ZANDO280320259806-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $14.95</span>
+              <span class="old">US $20.59</span>
+            </div>
+            <div class="wishlist">♡</div>
+            <div class="title">AG-Slipper</div>
+            <div class="color-options">
+              <div class="color-option color-white" id="active"></div>
+              <div class="color-option color-chocolate"></div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="discount">-30%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/2522501001/IMG_0080-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $12.31</span>
+              <span class="old">US $17.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Heels With Bow</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-33.43%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/5142406016/Basketball-Slippers%20(1)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $11.95</span>
+              <span class="old">US $17.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Basketball Slippers</div>
+            <div class="color-options">
+              <div class="color-option color-white"  id="active"></div>
+              <div class="color-option color-black"></div>
+             
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-12/5252412008/Sneakers%20(1)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $11.52</span>
+              <span class="old">US $57.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Vintage Culture Sneakers</div>
+            <!-- <div class="color-options">
+             <div class="color-option color-white" id=" active"></div>
+              <div class="color-option color-black"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-40.61%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/5142411062%20replace/ZANDO2105202525831-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $19.95</span>
+              <span class="old">US $33.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Basketball Sandals</div>
+            <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-brown"></div>
+              <div class="color-option color-yellow"></div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-11/2222409938/Sandle%20(1)-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.58</span>
+              <span class="old">US $18.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Heel Sandals</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/5252408001/IMG_0305-cr-450x672.jpg"
+            alt="Wide Leg Cargo Jean"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $15.18</span>
+              <span class="old">US $50.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Retro Culture Sneaker</div>
+            <div class="color-options">
+              <div class="color-option color-white"  id="active"></div>
+              <div class="color-option color-black"></div>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2024-06/2222403632/Sandal%20(4)-cr-450x672.jpg"
+            alt="Halter Mini Dress"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $4.32</span>
+              <span class="old">US $21.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Heel Shoes</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-70%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/5252408008/IMG_0273-cr-450x672.jpg"
+            alt="Cargo Trousers"
+          />
+          <span class="txt-brand">361 Sport</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $12.88</span>
+              <span class="old">US $42.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Cargo Trousers</div>
+            <div class="color-options">
+              <div class="color-option color-white"  id="active"></div>
+              <div class="color-option color-bisque"></div>
+            </div>
+          </div>
+       
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-01/22224111122/IMG_0376-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.80</span>
+              <span class="old">US $17.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Ribbed Heel sandals</div>
+            <div class="color-options">
+              <div class="color-option color-pink"  id="active"></div>
+              <div class="color-option color-pink"></div>
+              
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2025-05/22225031372/ZANDO1605202524710-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">TEN11</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $8.47</span>
+              <span class="old">US $16.95</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Leather Flip Flops Heels</div>
+            <!-- <div class="color-options">
+              <div class="color-option color-black active"></div>
+              <div class="color-option color-white"></div>
+              <div class="color-option color-red"></div>
+            </div> -->
+          </div>
+         
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://zandokh.com/image/cache/catalog/products/2023-06/4222303036/Flate-Ballet%20(3)-cr-450x672.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/c2/52/d9/c252d9d87a812e4f4a690a1a231a78a4.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/1200x/77/59/23/775923e215cb77efc3fb4cb69a33da9b.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/13/0c/e4/130ce4feaec800accece13d2e5027716.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/b1/ad/43/b1ad435d27291fb5f554f727e432ef1b.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/96/c9/9e/96c99eb9c277cc34a2cb2793ad91e3fd.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Direct Sunlight</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/95/1c/78/951c780fb17dd53d845dedf2085cace9.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/f9/2e/e6/f92ee6ea0e98b89ecb47a194ad5aa876.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-50%</div>
+          <img
+            src="https://i.pinimg.com/1200x/49/9e/a1/499ea1c90387c70d41ef257772fa1b7f.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $27.12</span>
+              <span class="old">US $59.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Current Mood D Ring Chunky Combat Boots</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/1200x/bf/e4/56/bfe4566327c354df9ad6c63b253f9266.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/736x/16/79/6e/16796eaf581e5b0617337c762c4acf82.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/1200x/0e/f1/13/0ef113de4b877881bd328ee17f51f640.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+        <div class="card">
+          <div class="discount">-80%</div>
+          <img
+            src="https://i.pinimg.com/1200x/b9/78/e6/b978e68fe2b2241a978f9c6d141a625f.jpg"
+            alt="Sport Life T-Shirt"
+          />
+          <span class="txt-brand">ROUTINE</span>
+          <div class="card-content">
+            <div class="price">
+              <span class="new">US $5.12</span>
+              <span class="old">US $25.59</span>
+            </div>
+             <div class="wishlist">♡</div>
+            <div class="title">Flat Ballets</div>
+            <div class="color-options">
+              <div class="color-option color-green "  id="active"></div>
+              <div class="color-option color-black"></div>
+            
+            </div>
+          </div>
+       
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="slider-nav prev">&#10094;</div>
+      <div class="slider-nav next">&#10095;</div>
+
+      <!-- Dots indicator -->
+      <div class="slider-dots"></div>
+    </div>
+</div>
+<br><br><br>
+<div class="con-end">
+<div class="app">
+    <h3>App Zando</h3>
+    <br>
+    <img src="https://zandokh.com/image/catalog/logo/qr_code_app.png" alt="">
+</div>
+<div class="loya">
+    <h3>LOYALTY</h3>
+    <br>
+    <div class="fac">
+    <img src="https://zandokh.com/_next/image?url=%2Ficons%2Fheart-black.svg&w=16&q=75" alt="">
+    <p>Membership & Benefits</p>
+    </div>
+</div>
+<div class="follow">
+    <h3>FOLLOW US</h3>
+    <br>
+    <div class="fac">
+        <img src="/image/icons8-facebook-24.png" alt="">
+        <p>Facebook</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-instagram-logo-24.png" alt="">
+        <p>Instagram</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-tiktok-24.png" alt="">
+        <p>TikTok</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-youtube-24.png" alt="">
+        <p>Youtube</p>
+    </div>
+   
+</div>
+<div class="custom">
+    <h3>CUSTOMER SERVICES</h3>
+    <br>
+    <div class="fac">
+        <img src="/image/icons8-questions-24.png" alt="">
+        <p>Online exchange policy</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-privacy-policy-24.png" alt="">
+        <p>Privacy Policy</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-faq-24.png" alt="">
+        <p>FAQs & guides</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-location-24.png" alt="">
+        <p>Find a store</p>
+    </div>
+</div>
+<div class="cons-end">
+    <h3>CONTACT US</h3>
+    <br>
+    <div class="fac">
+        <img src="/image/icons8-gmail-24.png" alt="">
+        <p>info@zandokh.com</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-call-24.png" alt="">
+        <p>(+855) 081 999 716</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-call-24.png" alt="">
+        <p>(+855) 061 999 716</p>
+    </div>
+    <div class="fac">
+        <img src="/image/icons8-telegram-25.png" alt="">
+        <p>Telegram</p>
+    </div>
+</div>
+<div class="we-cop">
+    
+    <h3>WE ACCEPT</h3>
+    <br>
+    <img src="https://zandokh.com/image/catalog/logo/web-footer/We-accept-payment%E2%80%93for-web-footer-1.png" alt="">
+    
+</div>
+</div>
+<br><br><br><br>
+<hr size="1px" width="98%" color="black">
+<br><br>
+<p class="brand"><sup>© </sup>2015 - 2025 Zando.All right reserved.</p>
+    <br><br>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // រក្សាទុករាល់ sliders នៅក្នុងអារេមួយ
+        const sliders = document.querySelectorAll(".slider-container");
+        
+        // ដំណើរការលើ slider នីមួយៗ
+        sliders.forEach((sliderContainer) => {
+            const slider = sliderContainer.querySelector(".product-container");
+            const cards = sliderContainer.querySelectorAll(".card");
+            const prevBtn = sliderContainer.querySelector(".slider-nav.prev");
+            const nextBtn = sliderContainer.querySelector(".slider-nav.next");
+            const dotsContainer = sliderContainer.querySelector(".slider-dots");
+
+            let currentPosition = 0;
+            let cardsPerView = 4;
+            let totalCards = cards.length;
+
+            // គណនាតើត្រូវបង្ហាញកាតប៉ុន្មានតាមទទឹងអេក្រង់
+            function updateCardsPerView() {
+                if (window.innerWidth >= 1024) {
+                    cardsPerView = 4;
+                } else if (window.innerWidth >= 768) {
+                    cardsPerView = 3;
+                } else if (window.innerWidth >= 480) {
+                    cardsPerView = 2;
+                } else {
+                    cardsPerView = 1;
+                }
+
+                // ធ្វើឱ្យ dots ទាន់សម័យ
+                createDots();
+                updateSlider();
+            }
+
+            // បង្កើត dots សម្រាប់ navigation
+            function createDots() {
+                if (!dotsContainer) return;
+                
+                dotsContainer.innerHTML = "";
+                const dotCount = Math.ceil(totalCards / cardsPerView);
+
+                for (let i = 0; i < dotCount; i++) {
+                    const dot = document.createElement("div");
+                    dot.classList.add("dot");
+                    if (i === 0) dot.classList.add("active");
+                    dot.addEventListener("click", () => {
+                        goToSlide(i);
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            // ធ្វើឱ្យទីតាំង slider ទាន់សម័យ
+            function updateSlider() {
+                const cardWidth = cards[0].offsetWidth + 20; // width + gap
+                slider.style.transform = `translateX(-${
+                    currentPosition * cardWidth * cardsPerView
+                }px)`;
+
+                // ធ្វើឱ្យ state ប៊ូតុងទាន់សម័យ
+                if (prevBtn) {
+                    prevBtn.classList.toggle("disabled", currentPosition === 0);
+                }
+                if (nextBtn) {
+                    nextBtn.classList.toggle(
+                        "disabled",
+                        currentPosition >= Math.ceil(totalCards / cardsPerView) - 1
+                    );
+                }
+
+                // ធ្វើឱ្យ dot active ទាន់សម័យ
+                if (dotsContainer) {
+                    const dots = dotsContainer.querySelectorAll(".dot");
+                    dots.forEach((dot, index) => {
+                        dot.classList.toggle("active", index === currentPosition);
+                    });
+                }
+            }
+
+            // ទៅកាន់ slide ជាក់លាក់
+            function goToSlide(index) {
+                currentPosition = index;
+                updateSlider();
+            }
+
+            // Slide បន្ទាប់
+            function nextSlide() {
+                if (currentPosition < Math.ceil(totalCards / cardsPerView) - 1) {
+                    currentPosition++;
+                    updateSlider();
+                }
+            }
+
+            // Slide មុន
+            function prevSlide() {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateSlider();
+                }
+            }
+
+            // Event listeners
+            if (prevBtn) {
+                prevBtn.addEventListener("click", prevSlide);
+            }
+            if (nextBtn) {
+                nextBtn.addEventListener("click", nextSlide);
+            }
+
+            // ចាប់ផ្តើម
+            updateCardsPerView();
+            window.addEventListener("resize", updateCardsPerView);
+        });
+
+        // Wishlist toggle (មុខងារដើម)
+        document.querySelectorAll(".wishlist").forEach((item) => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+                item.textContent = item.classList.contains("active") ? "❤️" : "♡";
+            });
+        });
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
+  </body>
+</html>
