@@ -486,7 +486,18 @@
         justify-content: center;
         align-items: center;
         }
-        
+        .mo-flex {
+          display: flex;
+          gap: 10px;
+          margin: auto;
+          
+        }
+        .brand {
+          text-align: center;
+          margin: auto;
+          display: block;
+          
+        }
       }
 
       /* -------------product header--------- */
@@ -738,10 +749,16 @@
         background-color: #e53935;
       }
       .color-blue {
+        background-color: #703cfd;
+      }
+      .color-blues {
         background-color: #1e88e5;
       }
       .color-green {
         background-color: #43a047;
+      }
+      .color-yellow {
+        background-color: #e4f12b;
       }
       .color-pink {
         background-color: pink;
